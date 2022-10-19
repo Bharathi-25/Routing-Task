@@ -1,0 +1,60 @@
+.parent {
+  max-width: 100px;
+  min-height: 610px;
+  border-right: 1px solid #006711;
+}
+
+.listStyle {
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.listStyle p {
+  margin-top: 0px;
+}
+
+.contentAlignment {
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.circleImage {
+  position: relative;
+  margin-top: 98px;
+  width: 66px;
+  height: 66px;
+}
+
+.circleText {
+  position: absolute;
+  top: 102px;
+  left: 45px;
+  color: #ffffff;
+  font-family: "Lexend Deca";
+}
+
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.trendingIcon {
+  width: 32px;
+  height: 18px;
+}
+
+.createIcon {
+  width: 33px;
+  height: 33px;
+}
+
+.listStyle a {
+  text-decoration: none;
+  color: #101010;
+}
+
+.create .listStyle {
+  margin-top: 130px;
+}
