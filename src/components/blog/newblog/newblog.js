@@ -19,7 +19,11 @@ const Newblog = (props) => {
         <div className="fullblog-mainContainer">
           <div>
             <h2 className="headerDisplay">{props.topic}</h2>
-            <h4 className="fullblog-email">written by {props.email}</h4>
+            <h4 className="fullblog-email">written by {
+              props.email[0] === "@" ?
+              props.email :
+              `@${props.email.substring(0, props.email.indexOf("@"))}`
+            }</h4>
             <h4 className="fullblog-date">on {props.date} 2022</h4>
           </div>
           <div>
@@ -45,9 +49,16 @@ const Newblog = (props) => {
         </div>
       ) : (
         <div className="mainContainer">
-          <div>
-            <h3 className="dateDisplay">on {props.date}</h3>
-            <h4 className="emailDisplay">{props.email}</h4>
+          <div className="left-maincontent">
+            <h3 className="dateDisplay">{props.date}</h3>
+            <h4 className="emailDisplay"> 
+            {
+              props.email[0] === "@" ?
+              props.email :
+              `@${props.email.substring(0, props.email.indexOf("@"))}`
+            }
+            
+            </h4>
           </div>
           <div>
             <div>

@@ -1,14 +1,16 @@
 .dateDisplay {
   color: #101010;
-  text-align: center;
-  width: 67px;
+  text-align: right;
+  font-size: 40px;
 }
 
 .emailDisplay {
   color: #101010;
   font-weight: 300;
   transform: rotate(270deg);
-  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  left: 55px;
 }
 
 .fullblog-date {
@@ -52,6 +54,7 @@
   align-items: center;
   margin-left: 50px;
   margin-right: 150px;
+  gap: 50px;
 }
 
 .buttonDisplay {
@@ -65,4 +68,8 @@
 
 .fullblog-button {
   margin-top: 100px;
+}
+
+.left-maincontent {
+  width: 40%;
 }
